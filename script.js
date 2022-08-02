@@ -1,6 +1,6 @@
 let string = "";
-let buttons = document.querySelectorAll('.button');
-Array.from(buttons).forEach((button)=>{
+let btn = document.querySelectorAll('.button');
+Array.from(btn).forEach((button)=>{
   button.addEventListener('click', (e)=>{
     if(e.target.innerHTML == '='){
       string = eval(string);
@@ -17,5 +17,3 @@ Array.from(buttons).forEach((button)=>{
       }
   })
 })
-
-
